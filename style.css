@@ -313,17 +313,27 @@ nav > div {
 
 /* cement-section */
 .cement-section{
-    padding-block: 5%;
+    padding-block: 1%;
     background-color: var(--bg);
+}
+.cement-container{
+    width: 90%;
 }
 .cement .img-wrapper img{
     width: 100%;
     height: auto;
     object-fit: cover;
+    display: block;
 }
 .cement .img-wrapper{
-    width: 100px;
+    width: 100%;
+    height: 150px;
+    /* aspect-ratio: 1/1; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 /* cement-section end */
 
 /* why-choose-section */
@@ -376,7 +386,12 @@ nav > div {
 /* package-section */
 .package-section{
     padding-block: 5%;
-    background-color: var(--bg);
+    background-image: url(./assets/brick-wall-painted-white.jpg);
+    /* background-image: url(./assets/white-brick-wall-textures-background.jpg); */
+    /* background-image: url(./assets/red-brick-wall-pattern-texture.jpg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
 }
 .heading + span{
@@ -389,14 +404,23 @@ nav > div {
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    /* gap: 20px; */
+    gap: 20px;
+    
 }
 .package{
     width: 25%;
     min-width: 250px;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     text-align: center;
     padding: 20px;
+    background-color: whitesmoke;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 20px;
+    transition: .5s ease;
+}
+.package:hover{
+    transform: translateY(-5%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 .package .svg-wrapper{
     width: 50%;
@@ -554,6 +578,7 @@ nav > div {
     background-color: var(--bg-color);
     padding-block: 5%;
 }
+
 .steps-heading{
     text-align: center;
     margin-bottom: 20px;

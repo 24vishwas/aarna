@@ -1,6 +1,7 @@
 var swiper = new Swiper(".cement-container", {
     slidesPerView: 1,
     spaceBetween: 30,
+    
     loop: true,
     autoplay: {
         delay: 1500,
@@ -13,17 +14,17 @@ var swiper = new Swiper(".cement-container", {
     breakpoints: {
         // when window width is >= 320px
         320: {
-          slidesPerView: 3,
-          spaceBetween: 10,
+          slidesPerView: 2,
+          spaceBetween: 50,
         },
         // when window width is >= 480px
         500: {
-          slidesPerView: 4,
-          spaceBetween: 20,
+          slidesPerView: 3,
+          spaceBetween: 50,
         },
         992:{
-            slidesPerView: 5,
-            spaceBetween: 20,
+            slidesPerView: 6,
+            spaceBetween: 100,
         },
     },
   });
