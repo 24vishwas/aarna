@@ -165,6 +165,7 @@ nav > div {
     color: var(--btn-color);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     letter-spacing: 2px;
+    text-align: right;
 }
 .logo h1 span{
     color: var(--white-font);
@@ -568,7 +569,8 @@ nav > div {
     text-align: center;
 }
 .about-container p{
-    margin-top: 30px;
+    margin-top: 10px;
+    text-align: justify;
 }
 
 /* about section end */
