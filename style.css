@@ -14,6 +14,7 @@ html {
     --btn-color:#ED8B00;
     --green-shade:#386A42;
     --light-green:#D9FFE1;
+    --black:#000000;
 }
 * {
     box-sizing: border-box;
@@ -137,13 +138,17 @@ li {
     /* display: block; */
 }
 .secondary-btn:hover{
-    background-color: var(--white-font);
-    /* color: var(--white-font); */
+    background-color: var(--btn-color);
+
+    color: var(--white-font);
+}
+.secondary-btn:hover > svg{
+    stroke: #fff;
 }
 
 /* navbar */
 nav{
-    background-color: black;
+    background-color: var(--black);
 }
 nav > div {
     display: flex;
@@ -167,6 +172,7 @@ nav > div {
     letter-spacing: 2px;
     text-align: right;
 }
+
 .logo h1 span{
     color: var(--white-font);
 }
@@ -175,7 +181,7 @@ nav > div {
     align-items: center;
     gap: 20px;
 }
-.btns svg{
+.secondary-btn svg{
     width: 25px;
     height: 25px;
     stroke: var(--btn-color);
@@ -184,6 +190,7 @@ nav > div {
     display: flex;
     align-items: center;
     gap: 20px;
+    justify-content: center;
 }
 
 @media (max-width:992px) {
@@ -200,9 +207,20 @@ nav > div {
     }
 }
 @media (max-width:500px) {
+    .logo{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .logo h1{
+        font-size: 1.3rem;
+    }
     .btns{
         flex-direction: column;
-        gap: 5px;
+        gap: 20px;
+        width: 100%;
+    }
+    .btns a{
+        width: 100%;
         
     }
    
@@ -315,7 +333,7 @@ nav > div {
 /* cement-section */
 .cement-section{
     padding-block: 1%;
-    background-color: var(--bg);
+    /* background-color: var(--bg); */
 }
 .cement-container{
     width: 90%;
@@ -342,7 +360,11 @@ nav > div {
     /* margin-block: 5%; */
     padding-block: 5%;
     text-align: center;
+    background-color: var(--black);
     
+}
+.why-choose-wrapper .heading{
+    color: var(--white-font);
 }
 .why-choose-container{
     display: flex;
@@ -350,6 +372,7 @@ nav > div {
     justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 .svg-container svg{
     width: 50px;
@@ -367,9 +390,11 @@ nav > div {
     align-items: center;
     flex-direction: column;
     transition: .3s ease;
+    color: var(--white-font);
 }
 .why-choose:hover{
     border: 2px solid var(--btn-color);
+    color: var(--btn-color);
 }
 .why-choose span{
     font-weight: 600;
