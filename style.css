@@ -346,8 +346,8 @@ nav > div {
     display: block;
 }
 .cement .img-wrapper{
-    width: 100%;
-    height: 150px;
+    width: 70%;
+    height: 70px;
     /* aspect-ratio: 1/1; */
     display: flex;
     align-items: center;
@@ -454,12 +454,11 @@ nav > div {
     padding: 20px;
     background-color: rgb(255, 255, 255);
     border: 1px solid var(--black);
-    
     transition: .5s ease;
 }
    
 .package .svg-wrapper{
-    width: 50%;
+    width: 40%;
     margin-inline: auto;
 }
 .package .svg-wrapper svg{
@@ -476,6 +475,18 @@ nav > div {
     margin-top: 20px;
     display: inline-block;
 }
+@media (max-width:767px) {
+    .package{
+        width: 50%;
+        min-width: unset;
+    }
+    .package .content h2{
+        font-size: 1.2rem;
+    }
+    .package .content h3{
+        font-size: 1rem;
+    }
+}
 /* package-section end */
 
 /* project-section */
@@ -484,6 +495,7 @@ nav > div {
     padding-block: 3%;
     background-color: var(--black);
     position: relative;
+    overflow: hidden;
     opacity: 1;
 }
 .project-section::before{
@@ -497,7 +509,9 @@ nav > div {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.5;
+    opacity: 0.3;
+    
+    transform: rotate(45deg);
     /* z-index: 1; */
 }
 .project-container{
