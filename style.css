@@ -11,10 +11,11 @@ html {
     --border-gredient:linear-gradient(90deg, rgba(140,66,29,1) 0%, rgba(251,230,123,1) 33%, rgba(252,251,231,1) 54%, rgba(247,209,78,1) 77%, rgba(212,160,65,1) 100%);
     
     --bg:#FBE2C0;
-    --btn-color:#ED8B00;
+    --btn-color:#ed8b00;
+    /* --btn-color:#ED8B00; */
     --green-shade:#386A42;
     --light-green:#D9FFE1;
-    --black:#000000;
+    --black:#11111f;
 }
 * {
     box-sizing: border-box;
@@ -388,6 +389,7 @@ nav > div {
     border-radius: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     transition: .3s ease;
     color: var(--white-font);
@@ -407,18 +409,29 @@ nav > div {
     text-align: center;
     margin-top: 50px;
 }
+@media (max-width:500px) {
+    .why-choose-container > div{
+        width: calc(50% - 20px)
+    }
+    .why-choose-container{
+        gap: 20px;
+    }
+
+}
 /* WHY-CHOOSE-enD */
 
 /* package-section */
 .package-section{
     padding-block: 5%;
-    background-image: url(./assets/brick-wall-painted-white.jpg);
+    /* background-image: url(./assets/brick-wall-painted-white.jpg); */
+    /* background-image: url(./assets/white-grunge-brick-wall-background.jpg); */
     /* background-image: url(./assets/white-brick-wall-textures-background.jpg); */
     /* background-image: url(./assets/red-brick-wall-pattern-texture.jpg); */
-    background-position: center;
+    /* background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     text-align: center;
+    
 }
 .heading + span{
     color: var(--btn-color);
@@ -430,24 +443,21 @@ nav > div {
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    /* gap: 20px; */
     
 }
 .package{
     width: 25%;
-    min-width: 250px;
+    min-width: 300px;
     /* border: 1px solid gray; */
     text-align: center;
     padding: 20px;
-    background-color: whitesmoke;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid var(--black);
+    
     transition: .5s ease;
 }
-.package:hover{
-    transform: translateY(-5%);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
+   
 .package .svg-wrapper{
     width: 50%;
     margin-inline: auto;
@@ -471,7 +481,8 @@ nav > div {
 /* project-section */
 .project-section{
     text-align: center;
-    margin-block: 5%;
+    padding-block: 3%;
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='30' height='30' patternTransform='scale(1) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(27, 0%, 96%, 1)'/><path d='M0 22.5h30v15H0zm15-15h30v15H15m-30-15h30v15h-30zm15-15h30v15H0z'  stroke-width='4' stroke='hsla(37, 0%, 85%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")
     
     
 }
@@ -504,6 +515,38 @@ nav > div {
 .project-wrapper{
     margin-top: 20px;
 }
+.swiper-button-next,
+.swiper-button-prev {
+    width: 50px !important;
+    height: 50px !important;
+    background: var(--bg-color);
+    border-radius: 50px;
+    margin-top: -20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    border: none;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none; /* hide default arrows */
+}
+
+.swiper-button-next {
+    background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronRight-512.png);/* add custom next icon */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px;
+}
+
+.swiper-button-prev {
+    background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronLeft-512.png);/* add custom prev icon */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px;
+}
+
 /* project-section end */
 
 
@@ -602,10 +645,12 @@ nav > div {
 
 /* steps section */
 .steps-section {
-    background-color: var(--bg-color);
+    background-color: var(--black);
     padding-block: 5%;
 }
-
+.steps-heading .heading{
+    color: var(--white-font);
+}
 .steps-heading{
     text-align: center;
     margin-bottom: 20px;
@@ -655,6 +700,7 @@ nav > div {
     margin-block: 10px;
     position: relative;
 }
+
 
 .steps .steps-filter .filter-item::after {
     position: absolute;
@@ -755,7 +801,23 @@ nav > div {
         padding-inline: 20px;
     }
 }
-
+@media (max-width:500px) {
+    .steps .steps-filter{
+        flex-direction: column;
+    }
+    .left{
+        margin-right: auto;
+        margin-left: 50px;
+    }
+    .right{
+        margin-left: auto;
+        margin-right: 50px;
+    }
+    .steps .steps-filter .filter-item{
+        height: unset;
+        padding-bottom: 5px;
+    }
+}
 
 
 
