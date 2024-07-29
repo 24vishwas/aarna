@@ -144,8 +144,8 @@ li {
 
     color: var(--white-font);
 }
-.secondary-btn:hover > svg{
-    stroke: #fff;
+.primary-btn:hover > svg{
+    stroke: var(--btn-color);
 }
 
 /* navbar */
@@ -183,11 +183,7 @@ nav > div {
     align-items: center;
     gap: 20px;
 }
-.secondary-btn svg{
-    width: 25px;
-    height: 25px;
-    stroke: var(--btn-color);
-}
+
 .btns a{
     display: flex;
     align-items: center;
@@ -447,28 +443,33 @@ nav > div {
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    /* gap: 20px; */
+    gap: 20px;
     
 }
 .package{
-    width: 25%;
-    min-width: 300px;
+    width: calc(20% - 20px);
+    min-width: 250px;
     /* border: 1px solid gray; */
     text-align: center;
     padding: 20px;
     background-color: rgb(255, 255, 255);
     border: 1px solid var(--black);
     transition: .5s ease;
+    border-radius: 20px;
+}
+.package h2{
+    font-size: 1.2rem;
 }
    
 .package .svg-wrapper{
-    width: 40%;
+    width: 30%;
     margin-inline: auto;
 }
 .package .svg-wrapper svg{
     width: 100%;
     height: auto;
     display: inline-block;
+
 }
 .third-btn{
     background-color: var(--btn-color);
@@ -478,10 +479,17 @@ nav > div {
     font-weight: 600;
     margin-top: 20px;
     display: inline-block;
+    transition: .3s ease;
+    border: 1px solid transparent;
+}
+.third-btn:hover{
+    background-color: var(--white-font);
+    color: var(--btn-color);
+    border-color: var(--btn-color);
 }
 @media (max-width:767px) {
     .package{
-        width: 50%;
+        width: calc(50% - 20px);
         min-width: unset;
     }
     .package .content h2{
@@ -527,16 +535,17 @@ nav > div {
 }
 .project .img-wrapper img{
     width: 100%;
+    aspect-ratio: 1/1;
     height: auto;
     object-fit: cover;
 }
 
 .project{
     border-radius: 10px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    padding: 20px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+    /* padding: 20px; */
     margin-block: 30px;
-    background-color: white;
+    /* background-color: white; */
     /* margin-inline: 10px; */
 }
 .project h3{
@@ -593,7 +602,7 @@ nav > div {
 .advantage-section{
     position: relative;
     /* margin-block:5%; */
-    padding-block: 10%;
+    padding-block: 5%;
     background-color: var(--bg);
     text-align: center;
 }
@@ -934,6 +943,40 @@ nav > div {
 }
 
 /* ********** */
+
+/* contact section */
+.contact-section{
+    text-align: center;
+    margin-block: 5%;
+}
+.contact-btns svg{
+    width: 25px;
+    height: 25px;
+    stroke: var(--white-font);
+}
+
+.contact-btns a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contact-btns a img{
+    width: 30px;
+    height: 30px;
+}
+.contact-btns{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width:500px) {
+    .contact-btns{
+        flex-direction: column;
+        gap: 0px;
+        margin-top: 20px;
+    }
+}
 
 /* faq-section */
 
