@@ -166,6 +166,15 @@ li {
 /* navbar */
 nav{
     /* background-color: var(--black); */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+
 }
 nav > div {
     display: flex;
