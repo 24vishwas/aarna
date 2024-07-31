@@ -217,6 +217,7 @@ nav > div {
     align-items: center;
     gap: 20px;
     justify-content: center;
+    padding-block: 10px;
 }
 .btns span{
     color: var(--btn-color);
