@@ -710,7 +710,7 @@ nav > div {
     position: relative;
     /* margin-block:5%; */
     padding-block: 5%;
-    background-color: var(--bg);
+    /* background-color: var(--bg); */
     text-align: center;
 }
 .advantage-section::before{
@@ -720,7 +720,7 @@ nav > div {
     height: 100%;
     left: 0;
     top: 0;
-    background-image: url(./assets/house4.png);
+    /* background-image: url(./assets/house4.png); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
