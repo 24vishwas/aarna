@@ -796,6 +796,10 @@ nav > div {
     margin-top: 10px;
     text-align: justify;
 }
+.about-container .primary-btn{
+    margin-top: 30px;
+    display: inline-block;
+}
 .about-wrapper{
     display: flex;
     align-items: center;
