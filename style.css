@@ -731,9 +731,7 @@ nav > div {
     z-index: 5;
     position: relative;
 }
-.advantage-container > span{
-    color: black;
-}
+
 .advantage-wrapper{
     display: flex;
     align-items: flex-start;
