@@ -171,8 +171,8 @@ nav{
     top: 0;
     left: 0;
     /* background-color: whitesmoke; */
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
     z-index: 999;
 
 }
@@ -261,7 +261,7 @@ nav > div {
 /* hero-section */
 .hero-section{
     background-image:
-    linear-gradient(181deg, rgba(0, 0, 0, 0.244), rgba(0, 0, 0, 0.087)), url(./assets/building.JPG);
+    linear-gradient(181deg, rgba(0, 0, 0, 0.887), rgba(0, 0, 0, 0.218)), url(./assets/hero-img.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -358,9 +358,10 @@ nav > div {
 /* hero-section end */
 
 
+
 /*expertise section  */
 .expertise-section{
-    padding-block: 5%;
+    padding-block: 2%;
     text-align: center;
 }
 .expertise-container{
@@ -1221,7 +1222,9 @@ footer{
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
-
+}
+.footer-container > div{
+    width: calc(33.333% - 20px);
 }
 .contact a svg{
     stroke: #DD7F24;
@@ -1243,13 +1246,15 @@ footer{
     border-radius: 50%;
 }
 .footer-logo .img-wrapper{
+    /* width: 100%; */
     max-width: 300px;
+    margin-inline: auto;
 }
 
 .social-media{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
     gap: 20px;
 }
 .social-media a svg{
@@ -1271,6 +1276,9 @@ footer{
     }
     .footer-logo .img-wrapper{
         margin-inline: auto;
+    }
+    .social-media{
+        justify-content: center;
     }
     }
 
