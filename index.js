@@ -61,48 +61,6 @@ var swiper = new Swiper(".cement-container", {
   });
 
 
-  // ant tab code
-// ant design for library section
-// Library filter
-const stepsFilter = document.querySelector(".steps-filter");
-const stepsItem = document.querySelectorAll(".steps-item");
-
-// Add 'active' class to the first filter item initially
-const stepsFirstFilter = stepsFilter.querySelector(".filter-item");
-stepsFirstFilter.classList.add("active");
-
-// Get the filter value of the first filter item
-const stepsFirstValue = stepsFirstFilter.getAttribute("data-filter");
-
-// Show items corresponding to the first filter value
-stepsItem.forEach(item => {
-    if (item.classList.contains(stepsFirstValue) || stepsFirstValue === 'all') {
-        item.classList.remove("hide");
-        item.classList.add("show");
-    } else {
-        item.classList.remove("show");
-        item.classList.add("hide");
-    }
-});
-
-// Event listener for filter items
-stepsFilter.addEventListener("click", (event) => {
-    if (event.target.classList.contains("filter-item")) { // deactivate existing active 'filter-item'
-        stepsFilter.querySelector(".active").classList.remove("active");
-        // activate new 'filter-item'
-        event.target.classList.add("active");
-        const filterValue = event.target.getAttribute("data-filter");
-        stepsItem.forEach((item) => {
-            if (item.classList.contains(filterValue) || filterValue === 'all') {
-                item.classList.remove("hide");
-                item.classList.add("show");
-            } else {
-                item.classList.remove("show");
-                item.classList.add("hide");
-            }
-        });
-    }
-});
 
 // faqq
 function toggleAnswer(element) {

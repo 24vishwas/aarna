@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>AIM - Arna Infrastructure & Managemant</title>
+    <title>AIM - Aarna Infrastructure & Managemant</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -48,16 +48,16 @@
                     <a href="#" class="primary-btn">Explore More</a>
                 </div>
                 <div class="hero-form">
-                    <form action="">
+                    <form  method="post">
                         <h2>Book FREE Consultation</h2>
                         <h3>For Best Quality Construction At Affordable Rates</h3>
                         <div>
                             <label for="name">Name *</label>
-                            <input type="text" name="name" placeholder="Enter Your Name" >
+                            <input type="text" id="name" name="name" autocomplete="name" placeholder="Enter Your Name" required>
                         </div>
                         <div>
-                            <label for="name">Mobile No *</label>
-                            <input type="text" name="name" placeholder="Enter Your Mobile No" >
+                            <label for="mobile">Mobile No *</label>
+                            <input type="text" id="mobile" autocomplete="mobile" name="mobile" placeholder="Enter Your Mobile No" pattern="(\+91[\-\s]?)?[0]?(91)?[6-9]\d{9}|(\+91[\-\s]?)?[0]?\d{2,5}[\-\s]?\d{6,8}" required>
                         </div>
                         <button class="primary-btn">SEND YOUR DETAILS</button>
                     </form>
@@ -137,31 +137,37 @@
                         <div class="img-wrapper">
                             <img src="./assets/designer.svg" alt="designer">
                         </div>
-                        <p>Meet a designer</p>
+                        <p>Consultations</p>
                     </li>
                     <li>
                         <div class="img-wrapper">
-                            <img src="./assets/renovation.svg" alt="renovation">
+                            <img src="./assets/meet our Expert.svg" alt="renovation">
                         </div>
-                        <p>(5% payment) Book a renovation</p>
+                        <p>Meet Our Expert</p>
                     </li>
                     <li>
                         <div class="img-wrapper">
-                            <img src="./assets/execution.svg" alt="execution">
+                            <img src="./assets/book with us.svg" alt="execution">
                         </div>
-                        <p>(50% payment) Execution begins</p>
+                        <p>Book With Us</p>
                     </li>
                     <li>
                         <div class="img-wrapper">
-                            <img src="./assets/final.svg" alt="final">
+                            <img src="./assets/reveive plans.svg" alt="final">
                         </div>
-                        <p>(100% payment) Final Installations</p>
+                        <p>Receive Plans</p>
                     </li>
                     <li>
                         <div class="img-wrapper">
                             <img src="./assets/move.svg" alt="final">
                         </div>
-                        <p>Move in and enjoy</p>
+                        <p>Track & Transact</p>
+                    </li>
+                    <li>
+                        <div class="img-wrapper">
+                            <img src="./assets/key handover.svg" alt="final">
+                        </div>
+                        <p>Key Handover</p>
                     </li>
                     <li class="horizontal-line">
                         
@@ -177,7 +183,7 @@
               <div class="interior-wrapper">
                 <div class="interior">
                     <div class="img-wrapper">
-                        <img src="./assets/house.svg" alt="house">
+                        <img src="./assets/budget-house.svg" alt="house">
                     </div>
                     <h2>BUDGET</h2>
                     <p>₹ 1750/sq.ft (Incl.GST)</p>
@@ -185,7 +191,7 @@
                 </div>
                 <div class="interior">
                     <div class="img-wrapper">
-                        <img src="./assets/kitchen.svg" alt="house">
+                        <img src="./assets/house.svg" alt="house">
                     </div>
                     <h2>STANDARD</h2>
                     <p>₹ 1900/sq.ft (Incl.GST)</p>
@@ -193,7 +199,7 @@
                 </div>
                 <div class="interior">
                     <div class="img-wrapper">
-                        <img src="./assets/wardrobe.svg" alt="house">
+                        <img src="./assets/luxury-house.svg" alt="house">
                     </div>
                     <h2>CLASSIC</h2>
                     <p>₹ 2050/sq.ft (Incl.GST)</p>
@@ -201,7 +207,7 @@
                 </div>
                 <div class="interior">
                     <div class="img-wrapper">
-                        <img src="./assets/wardrobe.svg" alt="house">
+                        <img src="./assets/Untitled design (1).png" alt="house">
                     </div>
                     <h2>LUXURY</h2>
                     <p>₹ 2350/sq.ft (Incl.GST)</p>
@@ -498,20 +504,20 @@
                 <h1>Frequently Asked Questions</h1>
                 <div class="faq">
                     <div class="faq-question" onclick="toggleAnswer(this)">
-                        <h4>Question 1</h4>
+                        <h4>1. What is the process Aarna Infrastructures & Management follows from start to finish?</h4>
                         <span class="faq-toggle">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Answer to question 1.</p>
+                        <p>Our process begins with understanding your requirements and helping you select the perfect plot. We then create detailed architectural plans and designs tailored to your needs. Once the plans are finalized, we manage all aspects of construction, ensuring quality and adherence to timelines. Finally, we conduct thorough inspections and provide a timely handover of your completed project.</p>
                     </div>
                 </div>
                 <div class="faq">
                     <div class="faq-question" onclick="toggleAnswer(this)">
-                        <h4>Question 2</h4>
+                        <h4>2. How does Aarna Infrastructures & Management handle project modifications during construction?</h4>
                         <span class="faq-toggle">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Answer to question 2.</p>
+                        <p>We understand that changes may arise during the construction process. Our team maintains open communication with clients, allowing for discussions and approvals of any modifications. We assess the impact of changes on the timeline and budget and implement them efficiently to ensure your satisfaction without compromising the project's overall quality and schedule.</p>
                     </div>
                 </div>
                 <!-- Add more questions as needed -->
@@ -556,6 +562,7 @@
                
             </div>
         </div>
+        <!-- <a href="https://iconscout.com/illustrations/online-meetings" class="text-underline font-size-sm" target="_blank">Online Business Meetings</a> by <a href="https://iconscout.com/contributors/iconscout" class="text-underline font-size-sm">IconScout Store</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a> -->
         </footer>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
